@@ -65,9 +65,8 @@ export default function TermsAndConditionsDialog({
             fullWidth
             variant="contained"
             onClick={() => {
-              if (process.env.ENVIROMENT === "PRODUCTION") {
-                pixel.event("prelanding");
-              }
+              pixel.event("prelanding");
+
               window.location.href = "https://xcrush.ai";
             }}
             sx={{ marginTop: 2 }}
