@@ -43,7 +43,7 @@ export default function TermsAndConditionsDialog({
               textAlign: "center",
             }}
           >
-            {t("dialog.title")}
+            Adults Only
           </Typography>
 
           <Typography
@@ -54,7 +54,9 @@ export default function TermsAndConditionsDialog({
               textAlign: "center",
             }}
           >
-            {t("dialog.description")}
+            This website contains content intended only for individuals 18 years
+            of age or older. By proceeding, you confirm that you are of legal
+            age to access this content.
           </Typography>
         </Grid>
 
@@ -70,7 +72,7 @@ export default function TermsAndConditionsDialog({
             }}
             sx={{ marginTop: 2 }}
           >
-            {t("dialog.button")}
+            I am over 18
           </Button>
         </Grid>
       </Grid>
