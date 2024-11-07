@@ -16,6 +16,7 @@ export const DashboardPage = () => {
           xs: `url(${BackgroundImageMobile.src})`,
           lg: `url(${BackgroundImage.src})`,
         },
+        filter: "blur(4px)",
       }}
     >
       <TermsAndConditionsDialog
