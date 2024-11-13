@@ -15,11 +15,13 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 interface Props {
   openDialog: boolean;
   setOpenDialog: (open: boolean) => void;
+  utms?: string;
 }
 
 export default function TermsAndConditionsDialog({
   openDialog,
   setOpenDialog,
+  utms,
 }: Props) {
   const theme = useTheme();
   const t = useTranslations();
@@ -67,7 +69,7 @@ export default function TermsAndConditionsDialog({
             onClick={() => {
               pixel.event("prelanding");
 
-              window.location.href = "https://xcrush.ai";
+              window.location.href = `https://xcrush.ai/${utms}`;
             }}
             sx={{ marginTop: 2 }}
           >
